@@ -1,0 +1,119 @@
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #000; 
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  } */
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #fff;
+  }
+  
+  /* Form Container */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .form {
+    background-color: #333; /* Dark grey form background for contrast */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 5%;
+  }
+  
+  /* Form Fields */
+  .mb-3 {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #444; /* Dark border */
+  border-radius: 4px;
+  background-color: #222; /* Dark background */
+  color: #fff; /* White text */
+  box-sizing: border-box;
+  transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .form-control:focus {
+    background-color: #333; /* Darker background on focus */
+    border-color: #ff9500; /* Orange border on focus */
+    outline: none; /* Remove default outline */
+    color: #fff;
+  }
+  
+  label {
+    display: block;
+    font-size: 14px;
+    color: #bbb; /* Light grey label text */
+  }
+  
+  /* Button Container */
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  /* Buttons */
+  .btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .btn-success {
+    background-color: #ff9500; /* Orange color */
+    color: #fff; /* White text */
+  }
+  
+  .btn-danger {
+    background-color: #d9534f; /* Red color */
+    color: #fff; /* White text */
+  }
+  
+  .btn:hover {
+    opacity: 0.8; /* Slightly darken on hover */
+  }
+  
+  /* Links */
+  a {
+    color: #ff9500; /* Orange links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column;
+    }
+  
+    .btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }

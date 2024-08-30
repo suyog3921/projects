@@ -1,0 +1,113 @@
+.header {
+    padding: 10px 20px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar .nav-links ul li {
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .nav-links ul li:hover {
+    background-color: #333;
+    border-radius: 5px;
+  }
+  
+  .navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar .auth-buttons .login-btn,
+  .navbar .auth-buttons .signup-btn {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar .auth-buttons .login-btn:hover,
+  .navbar .auth-buttons .signup-btn:hover {
+    background-color: #555;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+  
+  .hamburger-menu .change:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  .hamburger-menu .change:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger-menu .change:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  .nav-links.open ul {
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar .nav-links ul {
+      display: none;
+    }
+  
+    .navbar .nav-links.open ul {
+      display: flex;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background-color: #000;
+      padding: 10px;
+      border-top: 1px solid #333;
+    }
+  
+    .navbar .auth-buttons {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+    }
+  }

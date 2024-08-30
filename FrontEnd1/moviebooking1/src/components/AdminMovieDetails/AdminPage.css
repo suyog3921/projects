@@ -1,0 +1,50 @@
+.image-preview {
+    margin-top: 10px;
+  }
+  
+  .image-preview img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+.showtime-container {
+    position: relative;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    margin-top: 19px;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+
+  .btn {
+    margin-left: 10px;
+  }
+  
+  .top-bar {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    display: flex;
+    justify-content: flex-end;
+    width: calc(100% - 20px); /* Adjust width to account for padding/margin */
+  }
+  
+  .logout-button {
+    margin-left: auto; /* Pushes the button to the far right */
+    width: 10%;
+  }
+  
+  

@@ -1,0 +1,148 @@
+/* Base styling for navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+  padding: 10px 20px;
+  /* background-color: #333; */
+  background-color: rgba(36, 27, 27, 0.6);
+  border-radius: 25px;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  /* opacity: 0.9; */
+}
+
+.navBtn {
+  text-decoration: none;
+  color: azure;
+  display: block;
+  padding: 7px 15px;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation links for desktop */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links-container {
+  display: flex;
+  align-items: center;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+
+}
+
+
+.nav-links li {
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-links li:hover {
+  background-color: #444;
+  border-radius: 10px;
+}
+
+.navbar .auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .auth-buttons .login-btn,
+.navbar .auth-buttons .signup-btn {
+  background-color: #444;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 1s;
+}
+
+.navbar .auth-buttons .login-btn:hover,
+.navbar .auth-buttons .signup-btn:hover {
+  background-color: #ff4500;
+}
+
+.nav-links .navBtn.active {
+  background-color: #ff4500;
+  border-radius: 10px;
+}
+
+/* Hamburger menu styling */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+.hamburger-menu .bar.change {
+  background-color: #ff4500;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-links-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+
+  .nav-links-container.open {
+    max-height: 1000px; /* Large value to ensure it's open in mobile view */
+    opacity: 1;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .auth-buttons {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links-container {
+    display: flex;
+    max-height: none; /* Ensure it is always displayed */
+    opacity: 1;
+  }
+
+  .auth-buttons {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+}

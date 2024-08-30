@@ -1,0 +1,119 @@
+.rating span {
+  font-size: 1.5em; /* Adjust size as needed */
+  color: gold; /* Color for filled stars */
+  background-color: transparent;
+}
+
+.rating span:nth-child(n+6) {
+  color: #ccc; /* Color for empty stars */
+  background-color: transparent;
+}
+.movie-booking {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between each component */
+  }
+  
+  .movie-details {
+    text-align: center;
+    color: white;
+  }
+  
+  .movie-details img {
+    width: 30%;
+    border-radius: 10%;
+    margin-bottom: 4%;
+    margin-top: 1%;
+  }
+  
+  .date-selection ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .date-selection li {
+    cursor: pointer;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .date-selection li.selected {
+    background: #00f;
+  }
+  
+  .showtime-selection {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .showtime-selection button {
+    cursor: pointer;
+    padding: 10px;
+    background: #333;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .showtime-selection button.selected {
+    background: #00f;
+  }
+  
+  .seat-selection {
+    display: grid;
+    gap: 5px;
+    /* grid-template-columns: repeat( minmax(7em, 1fr));  */
+    justify-content: center;
+    grid-template-columns: max-content;
+  }
+  
+  .seat {
+    width: 7em;
+    height: 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .seat.available {
+    background: #00f;
+  }
+  
+  .seat.taken {
+    background: #f00;
+  }
+  
+  .seat.selected {
+    background: #0f0;
+  }
+  
+  .summary {
+    text-align: center;
+    color: white;
+  }
+  
+  .summary button {
+    padding: 10px 20px;
+    background: #00f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .seat-row {
+    display: flex;
+    gap: 5px; /* Optional, if you want space between seats */
+  }
+  
+  .seat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the seat area */
+  }

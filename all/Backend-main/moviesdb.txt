@@ -1,0 +1,98 @@
+
+--queries of demo movies without images
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('A superhero film about a man from Atlantis who must retrieve the Trident of Atlan to save his underwater kingdom.', 'Aquaman', 7.0);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('Earth\'s mightiest heroes must come together to stop Thanos from acquiring all six Infinity Stones.', 'Avengers', 8.4);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('A paranormal investigator couple help a family terrorized by a dark presence in their farmhouse.', 'Conjuring', 7.5);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('A sample image for testing.', 'Image', 0.0);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('DC superheroes team up to stop an alien invasion on Earth.', 'Justice League', 6.1);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('Ethan Hunt and his IMF team must track down a dangerous terrorist before it\'s too late.', 'Mission Impossible', 7.4);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('The story of a banker wrongfully imprisoned, his friendship with a fellow inmate, and his eventual escape.', 'Shawshank Redemption', 9.3);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('Peter Parker balances his life as an ordinary high school student with his superhero alter-ego Spider-Man.', 'Spiderman', 7.3);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('Batman sets out to dismantle the remaining criminal organizations that plague Gotham City.', 'The Dark Knight', 9.0);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('A love story aboard the ill-fated Titanic.', 'Titanic', 7.8);
+
+INSERT INTO movies (m_description, m_name, m_rating) 
+VALUES 
+('A hacker discovers the reality he lives in is a simulated reality created by intelligent machines.', 'The Matrix', 8.7);
+
+
+
+--queries of demo movies with images
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('A superhero film about a man from Atlantis who must retrieve the Trident of Atlan to save his underwater kingdom.', 'Aquaman', 7, 'c2ca4d70-f7cd-4201-9f82-5f91cce3e261.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('Earth\'s mightiest heroes must come together to stop Thanos from acquiring all six Infinity Stones.', 'Avengers', 8, '49ca5f62-4416-45b5-9ff1-1b4563bb5c34.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('A paranormal investigator couple help a family terrorized by a dark presence in their farmhouse.', 'Conjuring', 8, '888000a0-1a4c-4982-a4a1-96fa47f655cd.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('A hacker discovers the reality he lives in is a simulated reality created by intelligent machines.', 'The Matrix', 9, '5f0ae8fb-043c-4923-8cbd-497896f3622d.png');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('DC superheroes team up to stop an alien invasion on Earth.', 'Justice League', 6, '9f41cc3c-829e-4b73-a9c8-c2aea894403f.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('Ethan Hunt and his IMF team must track down a dangerous terrorist before it\'s too late.', 'Mission Impossible', 7, 'cc37f88b-6c1e-4c0f-a13a-5f81aec01fb4.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('The story of a banker wrongfully imprisoned, his friendship with a fellow inmate, and his eventual escape.', 'Shawshank Redemption', 9, '457d3fb6-056c-4f40-b03b-5f29e5f5fcd2.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('Peter Parker balances his life as an ordinary high school student with his superhero alter-ego Spider-Man.', 'Spiderman', 7, '54f88244-3eed-4ce0-a742-22c1c2c1a3e7.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('Batman sets out to dismantle the remaining criminal organizations that plague Gotham City.', 'The Dark Knight', 9, 'e8f5ea57-52c8-451f-9854-1eb185a25d8d.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('A love story aboard the ill-fated Titanic.', 'Titanic', 8, '5a30fb7a-2706-4813-a8b9-441078ebb282.jpg');
+
+INSERT INTO movies (m_description, m_name, m_rating, movie_image_name) 
+VALUES 
+('A hacker discovers the reality he lives in is a simulated reality created by intelligent machines.', 'The Matrix', 9, '43736448-3048-4dec-bb19-de66a12df005.png');
+
+
+
+
